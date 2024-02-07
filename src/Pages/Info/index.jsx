@@ -116,6 +116,11 @@ style={{
         style={{background:"green", padding:"12px", borderRadius:"12px",border:"none", marginTop: "10px"}}
         
         onClick={()=>{
+          window.localStorage.setItem(
+            "selectedMovies",
+            JSON.stringify(selectedMovies)
+          );
+          
           navigate("/showcase");
         }}
 
