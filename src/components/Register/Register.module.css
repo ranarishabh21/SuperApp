@@ -1,0 +1,141 @@
+.container{
+    display: flex;
+    
+}
+
+img{
+    height: 110vh;
+    display: block;
+    width: 50vw;
+    
+}
+
+.bottom{
+    position: absolute;
+    color: white;
+    bottom: 3vh;
+    left: 2vw;
+    font-size: 55px;
+    font-weight: 900;
+    max-width: 50vw;
+}
+
+.body {
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   height: 100vh;
+   position: absolute;
+   right: 0;
+   width: 50vw;
+}
+
+
+.body .super {
+    color: #72db73;
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+
+.super {
+    font-family: "Single Day", cursive;
+}
+
+
+form input {
+    margin: 12px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    background-color: #292929;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+    transition: border 0.3s;
+    outline: none;
+
+}
+
+form input:focus {
+    border-color: #72db73;
+}
+
+form label {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+    width: 90%;
+    max-width: 400px;
+    margin: 12px auto;
+    text-align: left;
+}
+
+form label input[type="checkbox"] {
+    margin: 0;
+    width: 22px;
+    height: 22px;
+}
+
+
+form button {
+    width: 90%;
+    max-width: 400px;
+    margin: 24px auto;
+    border-radius: 24px;
+    padding: 10px 12px;
+    color: white;
+    background-color: #72db73;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+form button:hover {
+    background-color: #5cb85c;
+}
+
+
+form .error {
+    color: red;
+    font-size: 0.67rem;
+    line-height: 0.8em;
+    letter-spacing: 0.02em;
+    width: 90%;
+    max-width: 400px;
+    margin: -10px auto 8px;
+    text-align: left;
+    margin-top: 2px;
+}
+
+
+.footer p {
+    font-size: 14px;
+    color: #7c7c7c;
+    width: 90%;
+    max-width: 400px;
+    margin: 8px auto;
+    text-align: left;
+    line-height: 1.2rem;
+}
+
+.footer span {
+    color: #72db73;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 2vw;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

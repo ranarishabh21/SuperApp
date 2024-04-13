@@ -1,19 +1,20 @@
 import { Route, Routes, useRoutes } from "react-router-dom"
-import Register from './Pages/Register'
-import Info from './Pages/Info'
-import Showcase from './Pages/Showcase'
-import Movies from './Pages/Movies'
+
+import RegisterPage from "./Pages/RegisterPage/RegisterPage"
+import GenerePage from "./Pages/GenerePage/GenerePage"
+import HomePage from "./Pages/HomePage/HomePage"
+import MoviePage from "./Pages/MoviePage/MoviePage"
 
 function App() {
   
 
   return (
     <Routes>
-      <Route path="/" element={<Register/>}/>
-      <Route path="/register" element={<Register/>}/>
-      <Route path="/movies" element={<Movies/>}/>
-      <Route path="/info" element={<Info/>}/>
-      <Route path="/showcase" element={<Showcase/>}/>
+      <Route path="/" element={<RegisterPage/>}/>
+      <Route path="/register" element={<RegisterPage/>}/>
+      <Route path="/genere" element={<GenerePage/>}/>
+      <Route path="/home" element={<HomePage/>}/>
+      <Route path="/movie" element={<MoviePage/>}/>
       <Route path="*" element={<h1>404 Route not found</h1>}/>
     </Routes>
   )
