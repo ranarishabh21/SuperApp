@@ -101,15 +101,13 @@ function MovieGenre() {
               <img onClick={() => removeCategory(category)} src={cross}/>
             </div>
           ))}
-          {lengthError ? (
+          {(lengthError || categories.length<3) ? (
             <div className={styles.error}>
             <img src={warning} alt="alert_icon" />
             Minimum 3 category required
           </div>
             
-          ) : (
-            <></>
-          )}
+          ):<></>}
         </div>
       </div>
       <div className={styles.right}>
@@ -125,7 +123,7 @@ function MovieGenre() {
         ))}
       </div>
 
-      <button className={styles.signUp} onClick={handleSubmit}>
+      <button   className={styles.signUp} onClick={handleSubmit}>
         Next Page
       </button>
     </div>
