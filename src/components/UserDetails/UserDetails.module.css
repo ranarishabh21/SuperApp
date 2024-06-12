@@ -1,28 +1,22 @@
-.userDetails {
-    border-radius: 6px;
-    height: 40vh;
-    width: 30vw;
+.container{
     background-color: rgba(87, 70, 234, 1);
-    padding: 2% 2% 2% 2%;
+    height: 60%;
+    border-radius: 6px ;
+    padding:2% 2% 2% 2%;
     display: flex;
     gap: 7%;
 }
-
-.userDetails>img {
+.container>img {
     height: 100%;
-    width: 80%
-
 }
 
-
-.userDetails>div {
+.container>div {
     width: 80%;
     display: flex;
     flex-direction: column;
     margin-top: 1.8%;
 }
-
-.userDetails>div>span {
+.container>div>span {
     font-family: Roboto;
     font-size: 0.85rem;
     font-weight: 400;
@@ -42,10 +36,10 @@
     line-height: 2rem;
     letter-spacing: 0.02em;
     text-align: left;
-    color: white;
+    color: rgba(255, 255, 255, 1);
 }
 
-.categoriesChoosen {
+.categorySelected {
     width: inherit;
     height: 76%;
     margin-top: 2%;
@@ -55,8 +49,8 @@
     gap: 1vh;
 }
 
-.categoriesChoosen>div {
-    width: 45%;
+.categorySelected>div {
+    width: 30%;
     height: 30%;
     border-radius: 20px;
     background: rgba(159, 148, 255, 1);

@@ -1,26 +1,14 @@
-import React from 'react'
-import UserDetails from '../../components/UserDetails/UserDetails'
-import Notes from '../../components/Notes/Notes'
+import React from "react";
+import Home from "../../components/Home/Home";
+import Weather from "../../components/Weather/Weather";
 
 function HomePage() {
   return (
     <>
-    <div style={{display:"flex"}}>
-
-    <UserDetails/>
-    <Notes/>
-    
-
-
-    </div>
+      <Home />
     
     </>
-    
-    
-    
-  
-
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;

@@ -1,56 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
-
-
-
-.body {
-    /* background-color: black;
-    display: flex;
-    padding-right: 0;
-    min-height: 110vh; */
-    /* background-color: rgb(19, 19, 19); */
-
+/* .category-container {
     margin: 3vh 3vw 3vh 3vw;
     display: flex;
     justify-content: space-between;
     box-sizing: content-box;
-    background-color: black;
-}
+} */
 
-.right {
-    /* width: 40vw;
-    max-height: 80vh;
-    max-width: 40vw;
-    height: 80vh;
-    padding-top: 3vh;
-    display: grid;
-    gap: 2vw;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between; */
-    /* margin: 3vh 3vw 3vh 3vw; */
-    /* margin: 3vh 3vw 3vh 3vw;
+.container{
+    margin: 3vh 3vw 3vh 3vw;
     display: flex;
     justify-content: space-between;
-    box-sizing: content-box; */
-
-    color: white;
-    width: 49vw;
-    height: 94vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    gap: 3vh;
-    margin-top: 5vh;
+    box-sizing: content-box;
 }
 
 .left {
-    /* width: 45vw;
-    height: 80vh;
-    padding-top: 2vh;
-    text-align: center;
-    padding-left: 5vw;
-    box-sizing: border-box; */
     width: 25vw;
     height: 94vh;
     display: flex;
@@ -58,11 +20,6 @@
 }
 
 .left>h3 {
-    /* font-size: 5rem;
-    color: green;
-    font-family: "Single Day", cursive;
-    text-align: left; */
-
     font-family: Single Day;
     font-size: 2.8rem;
     font-weight: 400;
@@ -72,8 +29,6 @@
     color: rgba(114, 219, 115, 1);
     margin: 0;
 }
-
-
 
 .left>p {
     margin: 0;
@@ -87,16 +42,13 @@
     color: rgba(255, 255, 255, 1)
 }
 
-
-.selectedCategory {
+.selectedCategory{
     display: flex;
     flex-wrap: wrap;
     gap: 1vw;
 }
 
-
-
-.selectCategory {
+.selectedCategory>div {
     width: 9vw;
     height: 4vh;
     border-radius: 31px;
@@ -113,50 +65,42 @@
     justify-content: space-around;
 }
 
-.selectCategory>img {
-    height: 45%;
+.selectedCategory>div>img {
+    height: 35%;
     width: 10%;
     cursor: pointer;
 }
 
-
 .error {
     margin-top: 2vh;
-    color: rgba(255, 0, 0,1);
+    color: rgba(255, 0, 0, 1);
     font-family: Roboto;
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 27px;
     letter-spacing: 0.02em;
     text-align: left;
-} 
+}
 
 .error>img {
-    height: 30%;
-    width: 25%;
+    height: 32%;
     margin-right: 0.4vw;
 }
 
-
-.subHeading {
-    font-size: 3rem;
+.right{
     color: white;
-    text-align: left;
-    margin-top: 4vh;
+    width: 49vw;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 3vh;
+    margin-top: 5.6vh;
 }
 
-.signUp {
-    /* color: white;
-    background: green;
-    border-radius: 12px;
-    border: none;
-    padding: 12px;
-    height: 50px;
-    width: 10%;
-    position: relative;
-    top: 90vh; */
-
-
+.container>button {
     width: 10vw;
     height: 5vh;
     border: none;
@@ -176,7 +120,6 @@
     transition: 2s;
 }
 
-.signUp:active{
-    scale:0.4;
+.container>button:active {
+    scale: 0.4
 }
-

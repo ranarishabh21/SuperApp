@@ -1,4 +1,4 @@
-.notesContainer{
+.noteBox {
     width: 42%;
     border-radius: 6px;
     padding: 2% 3% 2% 3%;
@@ -14,18 +14,18 @@
     flex-direction: column;
 }
 
-textarea {
+.noteBox>textarea {
     margin-top: 4%;
     outline: none;
     border: none;
     resize: none;
     height: 80%;
-    background-color:transparent;
+    background-color: inherit;
     font-family: Roboto;
     font-size: 1rem;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0.04em;
     text-align: left;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
 }

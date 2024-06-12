@@ -1,8 +1,9 @@
 import React from 'react'
+import Movie from '../../components/Movie/Movie'
 
 function MoviePage() {
   return (
-    <div>MoviePage</div>
+    <Movie/>
   )
 }
 

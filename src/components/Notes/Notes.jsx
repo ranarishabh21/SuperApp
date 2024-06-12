@@ -1,28 +1,19 @@
-import React from 'react'
-import styles from './Notes.module.css'
-import { useState } from 'react'
+import React, { useState } from 'react'
+import styles from "./Notes.module.css"
 
 function Notes() {
+    const [note,setNote] = useState(
+        JSON.parse(localStorage.getItem("note")) || ""
+    )
 
-    const [notesData,setNotesData] = useState("")
-
-    const handleSaveNotes = (e)=>{
-        setNotesData(e.target.value)
-        localStorage.setItem("notes",JSON.stringify(notesData))
-    }
+    const handleChange = async (e) => {
+        setNote(e.target.value);
+        localStorage.setItem("note", JSON.stringify(e.target.value));
+      };
   return (
-    <div className={styles.notesContainer}>
-        All Notes
-
-        <textarea onChange={handleSaveNotes}
-        value={notesData}
-
-
-        ></textarea>
-
-
-
-
+    <div className={styles.noteBox}>
+      All notes
+      <textarea onChange={handleChange} value={note}></textarea>
     </div>
   )
 }
